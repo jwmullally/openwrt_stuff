@@ -3,7 +3,7 @@ set -eux -o pipefail
 
 rm -rf report && mkdir report report/partitions report/firmwares && cd report
 
-echo "firmware;partitions_hash;support_list" > report.csv
+echo "firmware	partitions_hash	support_list" > report.tsv
 
 for filename in ../firmware/*.bin; do
     firmware="$(basename $filename)"
@@ -17,6 +17,6 @@ for filename in ../firmware/*.bin; do
     cat "$dirname/partition.txt" > "partitions/$partition_hash.txt"
     support_list=$(cat "$dirname/support_list.txt")
     for support_list_entry in $support_list; do
-        echo "$firmware;$partition_hash;$support_list_entry" >> report.csv
+        echo "$firmware	$partition_hash	$support_list_entry" >> report.tsv
     done
 done
