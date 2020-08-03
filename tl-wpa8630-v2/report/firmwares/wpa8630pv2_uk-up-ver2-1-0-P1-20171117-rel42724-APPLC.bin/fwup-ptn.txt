@@ -1,0 +1,9 @@
+fwup-ptn os-image base 0x01000 size 0xfadea	
+fwup-ptn file-system base 0xfbdea size 0x4c7001	
+fwup-ptn partition-table base 0x00800 size 0x00800	
+fwup-ptn soft-version base 0x5c2deb size 0x00015	
+fwup-ptn support-list base 0x5c2e00 size 0x00057	
+fwup-ptn profile base 0x5c2e57 size 0x000c1	
+fwup-ptn default-config base 0x5c2f18 size 0x003e1	
+fwup-ptn default-nvm base 0x5c32f9 size 0x843f5	
+fwup-ptn default-pib base 0x6476ee size 0x05751	
