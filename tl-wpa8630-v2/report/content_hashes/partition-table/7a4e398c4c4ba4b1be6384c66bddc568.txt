@@ -1,0 +1,2 @@
+wpa8630v2_eu-up-ver2-0-3-P1-20190910-rel49754-APPLC.bin
+wpa8630v2_us-up-ver2-0-2-P1-20190910-rel37719-APPLC.bin
