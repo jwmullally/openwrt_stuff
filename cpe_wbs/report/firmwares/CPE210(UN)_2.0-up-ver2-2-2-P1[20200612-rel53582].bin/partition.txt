@@ -1,0 +1,16 @@
+partition fs-uboot base 0x00000 size 0x20000
+partition partition-table base 0x20000 size 0x02000
+partition default-mac base 0x30000 size 0x00020
+partition serial-number base 0x30100 size 0x00020
+partition product-info base 0x31100 size 0x00100
+partition device-info base 0x31400 size 0x00400
+partition signature base 0x32000 size 0x00400
+partition device-id base 0x33000 size 0x00100
+partition os-image base 0x40000 size 0x170000
+partition soft-version base 0x1b0000 size 0x00100
+partition support-list base 0x1b1000 size 0x01000
+partition file-system base 0x1c0000 size 0x600000
+partition user-config base 0x7c0000 size 0x10000
+partition default-config base 0x7d0000 size 0x10000
+partition log base 0x7e0000 size 0x10000
+partition radio base 0x7f0000 size 0x10000

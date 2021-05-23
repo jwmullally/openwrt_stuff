@@ -1,0 +1,5 @@
+fwup-ptn partition-table base 0x00800 size 0x00800	
+fwup-ptn os-image base 0x01000 size 0xeb345	
+fwup-ptn soft-version base 0xec345 size 0x00015	
+fwup-ptn support-list base 0xec35a size 0x0008f	
+fwup-ptn file-system base 0xec3e9 size 0x4a3001	
