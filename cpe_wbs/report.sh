@@ -28,4 +28,9 @@ done
 awk 'NR == 1; NR > 1 {print $0 | "sort -n"}' report.tsv > report.tsv.tmp
 mv report.tsv.tmp report.tsv
 
+# Generate 2nd report without firmware filename, just vendor
+awk 'NR == 1; NR > 1 {print $0 | "cut -d\"	\" -f2- | sort -n | uniq"}' report.tsv > report2.tsv
+sed -i 's/firmware      //g' report2.tsv
+
+
 echo "Finished generating report"

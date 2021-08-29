@@ -11,5 +11,5 @@ for url in $URLS; do
     url=${url// /%20}
     filename="$(basename $url)"
     curl -L -O "$url"
-    unzip -j "$filename" "*.bin" -d ../firmware
+    unzip -j "$filename" "*.bin" -d ../firmware || echo "Error extracting file, results may be incomplete"
 done
