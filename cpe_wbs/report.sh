@@ -24,4 +24,8 @@ for filename in ../firmware/*.bin; do
     echo "$firmware	$vendor	$partition_hash	$default_mac_base	$default_mac_size	$serial_number_base	$serial_number_size	$product_info_base	$product_info_size" >> report.tsv
 done
 
+# Sort all rows except header
+awk 'NR == 1; NR > 1 {print $0 | "sort -n"}' report.tsv > report.tsv.tmp
+mv report.tsv.tmp report.tsv
+
 echo "Finished generating report"
