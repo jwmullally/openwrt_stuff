@@ -1,4 +1,4 @@
-firmware	vendor	partition_hash	default_mac_base	default_mac_size	serial_number_base	serial_number_size	product_info_base	product_info_size
+vendor	partition_hash	default_mac_base	default_mac_size	serial_number_base	serial_number_size	product_info_base	product_info_size
 CPE210(TP-LINK|UN|N300-2|00000000):2.0	86d2f3dbdbd64373584c702ee77b9991	0x30000	0x00020	0x30100	0x00020	0x31100	0x00100
 CPE210(TP-LINK|UN|N300-2|00000000):2.0	def4cce79e014387ac0bef96855e0e2f	0x30000	0x00020			0x31100	0x00100
 CPE210(TP-LINK|UN|N300-2|00000000):3.0	86d2f3dbdbd64373584c702ee77b9991	0x30000	0x00020	0x30100	0x00020	0x31100	0x00100
