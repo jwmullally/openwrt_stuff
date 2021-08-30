@@ -4,7 +4,7 @@ set -eux -o pipefail
 rm -rf downloads firmware && mkdir downloads firmware && cd downloads
 
 # Grab the "url" column
-URLS="$(cat ../firmware_urls.csv | dos2unix | tail -n+2 | cut -d, -f5 | sort | uniq)"
+URLS="$(awk 'BEGIN{ FS=","; RS="\r\n"} NR > 1 {print $5 | "sort -n | uniq"}' ../firmware_urls.csv)"
 IFS='
 '
 for url in $URLS; do
