@@ -1,0 +1,11 @@
+fwup-ptn fs-uboot base 0x01000 size 0x1b1c5	
+fwup-ptn os-image base 0x1c1c5 size 0x321bad	
+fwup-ptn file-system base 0x33dd72 size 0x3cd001	
+fwup-ptn partition-table base 0x00800 size 0x00800	
+fwup-ptn product-info base 0x70ad73 size 0x00118	
+fwup-ptn soft-version base 0x70ae8b size 0x00015	
+fwup-ptn support-list base 0x70aea0 size 0x00056	
+fwup-ptn profile base 0x70aef6 size 0x000c1	
+fwup-ptn default-config base 0x70afb7 size 0x00411	
+fwup-ptn default-pib base 0x70b3c8 size 0x05751	
+fwup-ptn plc-nvm base 0x710b19 size 0x843f5	
